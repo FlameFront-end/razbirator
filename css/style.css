@@ -7,27 +7,59 @@ a{
 }
 
 a:hover{
-	color: rgb(0,224,144);
+	color: #FFF;
 }
 
 .title{
 	font-size: 42px;
+	color: #444444;
 }
 
 .text{
 	line-height: 25px;
 }
+
 .row{
 	display: flex;
 	justify-content: space-between;
 }
-.consultation{
+
+.consultation,
+.why_btn{
 	background-color: #528bff;
 	color: #ddffff;
 	margin-right: 40px;
 }
-.consultation:hover{
+.consultation:hover,
+.why_btn:hover{
 	background-color: #1f69ff;
+}
+
+.btn{
+	padding: 20px 30px;
+	border-radius: 20px;
+	transition: 0.5s;
+}
+.btn:hover{
+	transition: 0.5s;
+}
+
+.link{
+	color: #007bff;
+}
+.link:hover{
+	color: #007bff;
+	text-decoration: underline;
+}
+
+.container{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.container__line {
+	display: flex;
+	column-gap: 50px;
 }
 /* nav */
 
@@ -36,13 +68,12 @@ a:hover{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 35px;
-	padding-bottom: 15px;
+	padding-top: 50px;
 }
 
 .container_nav {
-	max-width: 1500px;
-	margin: 0 auto;
+	max-width: 1900px;
+	margin: 0 30px;
 }
 
 .nav__items {
@@ -51,12 +82,16 @@ a:hover{
 }
 
 .logo{
-	padding-right: 140px;
+	padding-right: 100px;
+	width: 250px;
+	height: auto;
 }
 .menu__item {
 	color: white;
 }
-
+.menu__item a:hover{
+	color: rgb(0,224,144);
+}
 ul{
 	display: flex;
 	column-gap: 30px;
@@ -75,13 +110,13 @@ ul{
 .logo{
 	padding-bottom: 50px;
 }
-.btn{
-	padding: 20px 30px;
-	border-radius: 20px;
+
+.social-img{
+	width: 25px;
 }
-.container{
-	max-width: 1360px;
-	margin: 0 auto;
+
+.social-img:first-child{
+	margin-left: 10px;
 }
 
 
@@ -144,9 +179,6 @@ ul{
 	text-decoration: underline;
 }
 
-.btn:hover{
-	transition: 0.5s;
-}
 .consultation-header{
 	margin-right: 40px;
 }
@@ -169,11 +201,6 @@ ul{
 	background-color: rgb(250,250,250);
 }
 
-.container{
-	max-width: 1360px;
-	margin: 0 auto;
-}
-
 .discharge__content{
 	margin: 0 auto;
 	margin-top: 170px;
@@ -190,10 +217,6 @@ ul{
 
 .discharge__text span{
 	text-decoration: underline;
-}
-
-.discharge__text a{
-	color: #007bff;
 }
 
 .discharge__text a:hover{
@@ -225,4 +248,53 @@ ul{
 }
 .avito__btn{
 	margin-bottom: 170px;
+}
+
+
+/* why */
+.why{
+	background-color: rgb(250,250,250);
+}
+
+/* Почему разбиратор? */
+.why-title {
+	text-align: center;
+	padding-bottom: 50px;
+	padding-top: 90px;
+}
+
+.why__img{
+	width: 120px;
+	padding-bottom: 20px;
+}
+
+.why__title{
+	padding-bottom: 10px;
+}
+
+.why__text{
+	line-height: 27px;
+	margin-bottom: 60px;
+}
+.why__text span{
+	color: #444444;
+}
+.why_btn-item{
+	text-align: center;
+	padding-bottom: 170px;
+}
+.why_btn{
+	text-align: center;
+	padding: 17px 150px;
+}
+.why_btn:hover{
+	color: #FFF;
+}
+
+/* map */
+.map__title{
+	text-align: center;
+	background-color: #ffffff;
+	margin-top: 170px;
+	margin-bottom: 20px;
 }
