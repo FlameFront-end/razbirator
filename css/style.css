@@ -1,0 +1,228 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	color: rgb(255,255,255);
+}
+
+a:hover{
+	color: rgb(0,224,144);
+}
+
+.title{
+	font-size: 42px;
+}
+
+.text{
+	line-height: 25px;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+}
+.consultation{
+	background-color: #528bff;
+	color: #ddffff;
+	margin-right: 40px;
+}
+.consultation:hover{
+	background-color: #1f69ff;
+}
+/* nav */
+
+.nav {
+	background-color: #2d313c;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 35px;
+	padding-bottom: 15px;
+}
+
+.container_nav {
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.nav__items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo{
+	padding-right: 140px;
+}
+.menu__item {
+	color: white;
+}
+
+ul{
+	display: flex;
+	column-gap: 30px;
+}
+
+.phone{
+	margin-left: 190px;
+	color: rgb(205,205,207);
+	padding-bottom: 10px;
+}
+
+.phone:hover{
+	color: rgb(0,224,144);
+}
+
+.logo{
+	padding-bottom: 50px;
+}
+.btn{
+	padding: 20px 30px;
+	border-radius: 20px;
+}
+.container{
+	max-width: 1360px;
+	margin: 0 auto;
+}
+
+
+/* header */
+
+
+.header{
+	margin-top: 150px;
+}
+
+.header__title{
+	color: rgb(68,68,68);
+	margin-bottom: 30px;
+	font-size: 100;
+	font-weight: 700;
+	font-size: 50px;
+}
+
+.header__ttile-min {
+	color: rgb(255,99,71);
+	margin-bottom: 15px;
+	font-weight: 600;
+	font-size: 20px;
+	padding-left: 30px;
+}
+
+.function{
+	margin-bottom: 10px;
+	text-decoration: underline;
+}
+
+.function a{
+	color: rgb(68,68,68);
+}
+
+.function a:hover{
+	color: rgb(52,105,255);
+}
+
+.header__img{
+	padding-top: 70px;
+	width: 680px;
+	padding-right: 50px;
+}
+
+.header__cotentn{
+	justify-content: space-between;
+}
+
+.reviews{
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.reviews a{
+	color: #007bff;
+}
+
+.reviews a:hover{
+	text-decoration: underline;
+}
+
+.btn:hover{
+	transition: 0.5s;
+}
+.consultation-header{
+	margin-right: 40px;
+}
+.demo{
+	border: 1px solid #1f69ff;
+	color: #1f69ff;
+}
+.demo:hover{
+	background-color: #1f69ff;
+}
+.header__btn{
+	margin-bottom: 170px;
+}
+
+
+/* discharge */
+
+
+.discharge{
+	background-color: rgb(250,250,250);
+}
+
+.container{
+	max-width: 1360px;
+	margin: 0 auto;
+}
+
+.discharge__content{
+	margin: 0 auto;
+	margin-top: 170px;
+}
+
+.discharge__title{
+	padding-bottom: 20px;
+}
+
+.discharge__text{
+	line-height: 25px;
+	margin-bottom: 170px;
+}
+
+.discharge__text span{
+	text-decoration: underline;
+}
+
+.discharge__text a{
+	color: #007bff;
+}
+
+.discharge__text a:hover{
+	text-decoration: underline;
+}
+
+
+/* avito */
+
+.avito{
+	background-color: #FFF;
+}
+
+.avito__content {
+	margin-top: 170px;
+}
+
+.avito__title {
+	padding-bottom: 20px;
+}
+
+.avito__text {
+	margin-bottom: 60px;
+}
+.avito__img{
+	margin-top: 200px;
+	max-width: 100%;
+	height: 200px;
+}
+.avito__btn{
+	margin-bottom: 170px;
+}
