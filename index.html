@@ -19,22 +19,38 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
 			rel="stylesheet">
+		<script>
+				window.onload = function () {
+					document.body.classList.add('loaded_hiding');
+					window.setTimeout(function () {
+						document.body.classList.add('loaded');
+						document.body.classList.remove('loaded_hiding');
+					}, 500);
+				}
+		</script>
 		<title>Разбиратор</title>
 	</head>
 	<body>
 
-		<!-- всплывающее окон start -->
-			<div id="zatemnenie">
-				<div id="okno">
-					<a href="#" class="close">
-						<img src="./img/okno/cross.svg" alt="cross" class="cross">
-					</a>
-					<input type="text" placeholder="Имя" class="input_okno">
-					<input type="tel" placeholder="Телефон" class="input_okno">
-					<input type="email" placeholder="E-mail" class="input_okno">
-					<textarea name="message" cols="30" rows="4" placeholder="Введите сообщение"></textarea>
-				</div>
+		<div class="preloader">
+			<div class="preloader__row">
+				<div class="preloader__item"></div>
+				<div class="preloader__item"></div>
 			</div>
+		</div>
+
+		<!-- всплывающее окон start -->
+		<div id="zatemnenie">
+			<div id="okno">
+				<a href="#" class="close">
+					<img src="./img/okno/cross.svg" alt="cross" class="cross">
+				</a>
+				<input type="text" placeholder="Имя" class="input_okno">
+				<input type="tel" placeholder="Телефон" class="input_okno">
+				<input type="email" placeholder="E-mail" class="input_okno">
+				<textarea name="message" cols="30" rows="4" placeholder="Введите сообщение"></textarea>
+			</div>
+		</div>
 		<!-- всплывающее окон end -->
 
 		<!-- nav start -->
@@ -88,13 +104,13 @@
 								<img class="social-img" src="./img/nav/tg.png" alt="1">
 							</a>
 							<a href="#!" class="social">
-								<img class="social-img" src="/img/nav/inst.png" alt="2">
+								<img class="social-img" src="./img/nav/inst.png" alt="2">
 							</a>
 							<a href="#!" class="social">
-								<img class="social-img" src="/img/nav/WA.png" alt="3">
+								<img class="social-img" src="./img/nav/WA.png" alt="3">
 							</a>
 							<a href="#!" class="social">
-								<img class="social-img" src="/img/nav/viber.png" alt="4">
+								<img class="social-img" src="./img/nav/viber.png" alt="4">
 							</a>
 						</div>
 					</div>
@@ -108,7 +124,7 @@
 		<header class="header">
 			<div class="container">
 				<div class="header__row row">
-					<div class="header__cotentn">
+					<div class="header__content">
 						<h1 class="header__title">
 							Разбиратор - сервис для <br>
 							продавцов б/у автозапчастей
@@ -227,7 +243,8 @@
 							Переносим всю информацию и фото.
 						</p>
 						<div class="avito__btn">
-							<a href="#zatemnenie" class="consultation consultation-avito btn animate">
+							<a href="#zatemnenie" class="consultation consultation-avito btn
+								animate">
 								Получить консультацию
 							</a>
 						</div>
@@ -559,7 +576,7 @@
 							<h1 class="client__title">
 								<b>Ростов-на-Дону</b>
 							</h1>
-							<a href="#!" class="client__link">
+							<a href="./forma.html" class="client__link">
 								www.vetgon.ru
 							</a>
 						</div>
