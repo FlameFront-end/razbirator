@@ -29,13 +29,8 @@ a:hover{
 
 .consultation,
 .why_btn{
-	background-color: #528bff;
 	color: #ddffff;
 	margin-right: 40px;
-}
-.consultation:hover,
-.why_btn:hover{
-	background-color: #1f69ff;
 }
 
 .btn{
@@ -68,6 +63,46 @@ li{
 	margin: 0;
 	padding: 0;
 }
+
+/* анимация ссылок start */
+.animate {
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, yellow, orange, red, violet, purple, blue, yellow);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index: 1;
+}
+.animate:hover {
+  animation: animate 8s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+.animate:before {
+  content: "";
+  z-index: -1;
+  background: linear-gradient(45deg, #f15523, #ef3224, #7c3697);
+  background-size: 400%;
+  opacity: 0;
+  transition: 0.5%;
+}
+.animate:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+/* анимация ссылок end */
+
+
 /* nav */
 
 .nav {
@@ -158,7 +193,7 @@ ul{
 
 
 .header{
-	margin-top: 150px;
+	padding-top: 150px;
 }
 
 .header__title{
@@ -220,13 +255,7 @@ ul{
 .consultation-header{
 	margin-right: 40px;
 }
-.demo{
-	border: 1px solid #1f69ff;
-	color: #1f69ff;
-}
-.demo:hover{
-	background-color: #1f69ff;
-}
+
 .header__btn{
 	margin-bottom: 170px;
 }
@@ -337,15 +366,14 @@ ul{
 	color: #FFF;
 }
 
-/* map */
+/* map start*/
 .map__title{
 	text-align: center;
 	background-color: #ffffff;
-	margin-top: 170px;
-	margin-bottom: 20px;
+	padding-top: 170px;
+	padding-bottom: 20px;
 }
 
-/* map start */
 .container__client{
 	display: flex;
 	justify-content: space-between;
@@ -362,8 +390,8 @@ ul{
 .client__title{
 	margin-top: 20px;
 	color: #444444;
-	font-style: 
 }
+
 .client__card_content{
 	align-items: center;
 	text-align: center;
