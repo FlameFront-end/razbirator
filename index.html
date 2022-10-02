@@ -19,15 +19,6 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
 			rel="stylesheet">
-		<script>
-				window.onload = function () {
-					document.body.classList.add('loaded_hiding');
-					window.setTimeout(function () {
-						document.body.classList.add('loaded');
-						document.body.classList.remove('loaded_hiding');
-					}, 500);
-				}
-		</script>
 		<title>Разбиратор</title>
 	</head>
 	<body>
@@ -54,9 +45,9 @@
 		<!-- всплывающее окон end -->
 
 		<!-- nav start -->
-		<nav class="nav">
+		<nav>
 			<div class="nav__items">
-				<ul class="menu">
+				<ul class="menu" id="menu">
 					<li>
 						<a href="#!">
 							<div class="menu__item-card-logo logo">разбиратор</div>
@@ -93,8 +84,6 @@
 							<div class="menu__item-card"><p class="menu__item-card-text">КОНТАКТЫ</p></div>
 						</a>
 					</li>
-				</ul>
-				<ul class="menu__right">
 					<div class="nav-right">
 						<div>
 							<a href="tel:79216151103" class="phone">
@@ -117,6 +106,11 @@
 						</div>
 					</div>
 				</ul>
+			</div>
+			<div class="mobile-bar" onclick="toggleMobileMenu();">
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
 		</nav>
 		<!-- nav end -->
@@ -586,5 +580,7 @@
 				</div>
 			</div>
 		</div>
+		<script src="./js/main.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>

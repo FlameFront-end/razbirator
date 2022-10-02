@@ -176,7 +176,7 @@ li{
 
 /* nav */
 
-.nav {
+nav {
 	background-color: #2d313c;
 	display: flex;
 	justify-content: center;
@@ -205,7 +205,6 @@ li{
 	display: flex;
 	align-items: center;
 	text-align: center;
-
 }
 
 .menu__item-card:hover{
@@ -214,7 +213,6 @@ li{
 	animation: spring 300ms ease-out;
 	text-shadow: 0 -1px 0;
 }
-
 
 .logo{
 	color: #FFF;
@@ -262,6 +260,84 @@ ul{
 .socials{
 	padding-top: 10px;
 }
+
+/* адаптив меню start */
+
+nav .mobile-bar{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5em 1em;
+	display: none;
+}
+nav .mobile-bar span{
+	height: 3px;
+	width: 20px;
+	margin: 2px;
+	background: red;
+	float:right
+}
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	transition: ease 1s all;
+}
+
+nav ul li{
+	display: inline-block;
+}
+nav ul li a{
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	background: #e1e1e1;
+}
+@media (max-width: 720px){
+	nav{
+		background-color: #2d313c;
+		position: fixed;
+	}
+	nav .mobile-bar{
+		display: flex;
+	}
+	.menu__item-card-logo{
+		padding: 20px 258px;
+		margin-right: 0px;
+	}
+	.menu__item-card{
+		padding: 20px 258px;
+	}
+	nav ul{
+		max-width: 260px;
+		opacity: 0;
+		max-height: 0px;
+		overflow: hidden;
+		display: flex;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 100%;
+		flex-direction: column;
+		background-color: #2d313c;
+	}
+	nav ul.active{
+		opacity: 1;
+		min-height: 1700px;
+		left: 0;
+		margin-left: 0;
+	}
+	.nav-right{
+		margin-left: 0px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-right: 0px;
+	}
+
+}	
 
 /* header */
 
@@ -465,10 +541,6 @@ ul{
 	text-decoration: underline;
 }
 
-
-
-
-
 #zatemnenie {
 	background: rgba(102, 102, 102, 0.5);
 	width: 100%;
@@ -525,3 +597,5 @@ textarea{
 	border-radius: 50%;
 	border: 1px solid rgb(73,80,87)	;
 }
+
+
