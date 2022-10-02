@@ -179,18 +179,18 @@ li{
 .nav {
 	background-color: #2d313c;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 1490px;
-	padding-left: 30px;
-	padding-right: 30px;
-	margin: 0 auto;
+	justify-content: center;
+/* фиксация */
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
 }
 .menu{
+	display: flex;
+	align-items: center;
+}
+.menu__right{
 	display: flex;
 	align-items: center;
 }
@@ -263,9 +263,7 @@ ul{
 	padding-top: 10px;
 }
 
-
 /* header */
-
 
 .header{
 	padding-top: 150px;
